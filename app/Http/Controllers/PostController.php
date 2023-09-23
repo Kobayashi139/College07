@@ -19,7 +19,7 @@ class PostController extends Controller
         return view('posts.show')->with(['post' => $post]);
     }
     //create gaatte
-     public function create(Category $category)
+    public function create(Category $category)
     {
         return view('posts.create')->with(['categories' => $category->get()]);
     }
