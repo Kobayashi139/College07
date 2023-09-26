@@ -19,4 +19,9 @@ class PostRequest extends FormRequest
             'post.body' => 'required|string|max:4000',
             ];
     }
+    
+    public function authorize ()
+    {
+        return true;
+    }
 }

@@ -1,3 +1,4 @@
+
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
 
@@ -17,9 +18,8 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
-                        {{ __('index') }}
+                        {{ __('Index') }}
                     </x-nav-link>
-                    
                 </div>
             </div>
 
@@ -102,5 +102,5 @@
             </div>
         </div>
     </div>
-  
+
 </nav>
