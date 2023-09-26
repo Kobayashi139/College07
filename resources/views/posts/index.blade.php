@@ -23,7 +23,8 @@
                         <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post">
                             @csrf　
                             @method('DELETE')
-                            <button type="button" onclick="deletePost({{ $post->id }})">delete</button> 
+                            <button type="button" onclick="deletePost({{ $post->id }})">delete</button>
+                           <br> {{ Auth::user()->name }}
                         </from>
                     </div>
                 @endforeach

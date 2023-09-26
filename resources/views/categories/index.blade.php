@@ -24,6 +24,7 @@
                             @csrf　
                             @method('DELETE')
                             <button type="button" onclick="deletePost({{ $post->id }})">delete</button> 
+                            {{ Auth::user()->name }}
                         </from>
                     </div>
                 @endforeach
